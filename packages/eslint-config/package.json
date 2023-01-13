@@ -1,0 +1,89 @@
+{
+  "name": "@bodrick/eslint-config",
+  "version": "0.0.1",
+  "description": "Fork of Airbnb's base JS ESLint config, for use with TypeScript and Visual Studio Code extensions",
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/eslint-config",
+    "type": "git",
+    "url": "https://github.com/bodrick/eslint-config"
+  },
+  "author": {
+    "email": "bodrick@purplepig.net",
+    "name": "bodrick"
+  },
+  "homepage": "https://github.com/bodrick/eslint-config",
+  "bugs": {
+    "email": "bodrick@purplepig.net",
+    "url": "https://github.com/bodrick/eslint-config/issues"
+  },
+  "main": "./base.js",
+  "exports": {
+    ".": "./base.js",
+    "./legacy": {
+      "default": "./legacy.js",
+      "node": "./legacy.js"
+    },
+    "./node": {
+      "default": "./node.js",
+      "node": "./node.js"
+    },
+    "./typescript": {
+      "default": "./typescript.js",
+      "node": "./typescript.js"
+    },
+    "./vscode": {
+      "default": "./vscode.js",
+      "node": "./vscode.js"
+    }
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "security": "pnpm audit",
+    "test": "ava"
+  },
+  "keywords": [
+    "airbnb",
+    "config",
+    "es2015",
+    "es2016",
+    "es2017",
+    "es2018",
+    "eslint",
+    "eslintconfig",
+    "typescript",
+    "vscode",
+    "javascript",
+    "styleguide"
+  ],
+  "peerDependencies": {
+    "eslint": "^8.31.0",
+    "prettier": "^2.8.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint-define-config": "^1.14.0",
+    "eslint-import-resolver-node": "^0.3.7",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-no-secrets": "^0.8.9",
+    "eslint-plugin-no-unsanitized": "^4.0.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-sonarjs": "^0.18.0",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "safe-regex": "^2.1.1"
+  },
+  "devDependencies": {
+    "ava": "^4.3.3",
+    "eslint": "^8.31.0",
+    "eslint-find-rules": "^4.1.0",
+    "execa": "^6.1.0"
+  }
+}
