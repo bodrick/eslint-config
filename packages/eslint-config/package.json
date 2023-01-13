@@ -1,6 +1,6 @@
 {
   "name": "@bodrick/eslint-config",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Fork of Airbnb's base JS ESLint config, for use with TypeScript and Visual Studio Code extensions",
   "license": "MIT",
   "repository": {
