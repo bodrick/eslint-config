@@ -32,7 +32,7 @@
     "lint": "eslint .",
     "prepack": "nr build",
     "release": "bumpp && pnpm publish",
-    "test": "vitest",
+    "test": "vitest; node .github/setup.js",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
@@ -72,7 +72,7 @@
   "dependencies": {
     "@antfu/eslint-define-config": "^1.23.0-2",
     "@antfu/install-pkg": "^0.3.1",
-    "@eslint-types/jsdoc": "46.9.1",
+    "@eslint-types/jsdoc": "46.8.2-1",
     "@eslint-types/typescript-eslint": "^6.19.1",
     "@eslint-types/unicorn": "^50.0.1",
     "@stylistic/eslint-plugin": "^1.5.4",
