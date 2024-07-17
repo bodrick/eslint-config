@@ -102,7 +102,7 @@
     "parse-gitignore": "^2.0.0",
     "picocolors": "^1.0.0",
     "prompts": "^2.4.2",
-    "toml-eslint-parser": "^0.9.3",
+    "toml-eslint-parser": "^0.10.0",
     "vue-eslint-parser": "^9.4.2",
     "yaml-eslint-parser": "^1.2.2",
     "yargs": "^17.7.2"
